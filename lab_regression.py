@@ -237,3 +237,13 @@ if __name__ == "__main__":
             if ridge_pipe:
                 reg_metrics = evaluate_regressor(ridge_pipe, X_tr, X_te, y_tr, y_te)
                 print(f"Ridge Regression: {reg_metrics}")
+
+"""
+Task 7 - Summary of Findings
+
+The most important features are the ones with the largest logistic regression coefficients.
+
+The model gives a fair baseline result. It finds some churners, but it also makes many false positive predictions. Precision is the main weakness here, while recall is also important because missing real churners can be costly.
+
+To improve performance, I would try better features, tune the model, adjust the classification threshold, and test stronger models.
+"""
